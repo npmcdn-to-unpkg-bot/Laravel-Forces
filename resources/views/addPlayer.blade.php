@@ -55,7 +55,7 @@
             @foreach($errors->all() as $error)
                 errorMSg += "{{$error}}\n";
             @endforeach
-            swal({   title: "{{session()->get('name')}} could not be added",
+            swal({   title: "Player Could Not Be Added",
                 text: errorMSg
                 ,
                 type: "error" })

@@ -28,11 +28,10 @@
                 </tfoot>
                 <tbody>
                 @foreach($players as $player)
-                    <tr>
+                    <tr id="player{{$player->id}}">
                         <td>
                             <button type="button" class="btn btn-info">Edit Player</button>
                         </td>
-                        <td>{{$player->id}}</td>
                         <td>{{$player->name}}</td>
                         <td>{{$player->attack}}</td>
                         <td>{{$player->defense}}</td>

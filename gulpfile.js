@@ -1,3 +1,6 @@
+var gulp = require('gulp');
+var exec = require('child_process').exec;
+var path = require('path');
 var elixir = require('laravel-elixir');
 
 /*
@@ -12,5 +15,14 @@ var elixir = require('laravel-elixir');
  */
 
 elixir(function(mix) {
-    mix.sass('app.scss');
+ //   mix.sass('app.scss');
+	mix.phpUnit([] , path.normalize('vendor/bin/phpunit') + ' --verbose');
 });
+
+gulp.task('phpunit', function (cb) {
+    exec('vendor\\bin\\phpunit', function (err, stdout, stderr) {
+        console.log(stdout);
+        console.log(stderr);
+        cb(err);
+    });
+})

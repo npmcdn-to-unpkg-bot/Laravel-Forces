@@ -7,7 +7,7 @@
             <li><a href="#">Home</a></li>
             <li><a href="#">Add Player</a></li>
             <li><a href="#">Make a Team</a></li>
-            <li><a href="#">Edit Player</a></li>
+            <li><a href="{{ action("PlayerController@editPlayer") }}">Edit Player</a></li>
         </ul>
     </div>
 </nav>
