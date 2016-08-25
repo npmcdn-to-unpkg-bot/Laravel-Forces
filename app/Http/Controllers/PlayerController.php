@@ -34,7 +34,7 @@ class PlayerController extends Controller
     }
 
     public function editPlayer () {
-        $players = player::all();
+        $players = Player::all();
         return view('editPlayer', compact('players'));
     }
 }
