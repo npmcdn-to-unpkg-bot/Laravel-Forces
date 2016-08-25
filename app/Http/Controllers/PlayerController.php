@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\AddPlayerRequest;
-use App\Models\player;
+use App\Models\Player;
 use Illuminate\Http\Request;
 use Sessions;
 use App\Http\Requests;
@@ -20,7 +20,7 @@ class PlayerController extends Controller
      */
     public function savePlayer (AddPlayerRequest $request){
 
-        $player = new player;
+        $player = new Player;
         $saved = false;
         $player->name  = request()->name;
         $player->attack  = request()->attack;
