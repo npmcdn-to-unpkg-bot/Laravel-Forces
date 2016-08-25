@@ -13,7 +13,8 @@ class Kernel extends HttpKernel
      *
      * @var array
      */
-    protected $middleware = [
+    protected /** @noinspection PhpUnnecessaryFullyQualifiedNameInspection */
+		$middleware = [
         \Illuminate\Foundation\Http\Middleware\CheckForMaintenanceMode::class,
     ];
 
@@ -22,7 +23,12 @@ class Kernel extends HttpKernel
      *
      * @var array
      */
-    protected $middlewareGroups = [
+    protected /** @noinspection PhpUnnecessaryFullyQualifiedNameInspection */
+		/** @noinspection PhpUnnecessaryFullyQualifiedNameInspection */
+		/** @noinspection PhpUnnecessaryFullyQualifiedNameInspection */
+		/** @noinspection PhpUnnecessaryFullyQualifiedNameInspection */
+		/** @noinspection PhpUnnecessaryFullyQualifiedNameInspection */
+		$middlewareGroups = [
         'web' => [
             \App\Http\Middleware\EncryptCookies::class,
             \Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse::class,
@@ -43,7 +49,12 @@ class Kernel extends HttpKernel
      *
      * @var array
      */
-    protected $routeMiddleware = [
+    protected /** @noinspection PhpUnnecessaryFullyQualifiedNameInspection */
+		/** @noinspection PhpUnnecessaryFullyQualifiedNameInspection */
+		/** @noinspection PhpUnnecessaryFullyQualifiedNameInspection */
+		/** @noinspection PhpUnnecessaryFullyQualifiedNameInspection */
+		/** @noinspection PhpUnnecessaryFullyQualifiedNameInspection */
+		$routeMiddleware = [
         'auth' => \App\Http\Middleware\Authenticate::class,
         'auth.basic' => \Illuminate\Auth\Middleware\AuthenticateWithBasicAuth::class,
         'can' => \Illuminate\Foundation\Http\Middleware\Authorize::class,

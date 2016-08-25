@@ -3,4 +3,4 @@ new Vue ({
     data: {
         playerName: ''
     }
-})
+});
